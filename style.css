@@ -1,0 +1,128 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+       body {
+        
+        background:url(https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?w=996&t=st=1679383645~exp=1679384245~hmac=c4093343d4a450a6728e450b6318b9fd672aae4f6e6258d78e863aaf2f0c38cd);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .container {
+        position: relative;
+        max-width: 700px;
+        padding: 10px;
+        margin: 50px auto;
+        align-content: center;
+      }
+      .addTask {
+        width: 100%;
+        display: flex;
+        padding: 10px 0;
+      }
+      .addTask > input[type="text"] {
+        width: 100%;
+        color: white;
+        border: none;
+        border-bottom: 1px solid white;
+        background: none;
+        padding: 10px;
+        font-size: 22px;
+        outline: none;
+      }
+      .addTask button {
+        margin: 0 10px;
+        background: whitesmoke;
+        color: black;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 10px;
+        border: 1px solid black;
+        outline: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .addTask button:hover {
+         background:black;
+         color: #fff;
+         border: 1px solid white;
+        
+      }
+
+
+
+
+      .notCompleted,
+      .Completed {
+        margin: 5px 0;
+        padding: 20px;
+      }
+      h3 {
+    
+        font-size: 28px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+      }
+      ol {
+        list-style: none;
+        counter-reset: my-counter;
+        max-width: 600px;
+        margin: 0px 20%;
+      }
+      ol li {
+        width: 130%;
+        padding: 18px;
+        margin: 5px 0;
+        background: whitesmoke;
+        border: 1px solid black;
+        font-size: 22px;
+        counter-increment: my-counter;
+        border-radius: 10px;
+      }
+         ol li:hover{
+          border: 2px solid white;
+        background: yellow;
+
+      }
+      ol .Completed li {
+        border: 1px solid black;
+        background: whitesmoke;
+      }
+      ol .Completed li:hover {
+        border: 2px solid white;
+
+        background:rgb(29, 255, 29);
+      }
+ 
+
+
+
+      ol li::before {
+        content: counter(my-counter);
+        background:black;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        display: inline-block;
+        line-height: 2rem;
+        text-align: center;
+        color:white;
+        margin-right: 0.5rem;
+      }
+      li button {
+        float: right;
+        padding: 0px;
+        font-size: 20px;
+        line-height: 27px;
+        margin-right: 11px;
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+      .placeholder{
+        color: white;
+      }
